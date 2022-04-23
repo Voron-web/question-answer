@@ -11,8 +11,15 @@
   .profile {
     display: none;
   }
+  .header {
+    padding: 0 18px;
+  }
   .header__all-questions {
     display: none;
+  }
+  .header__logo {
+    width: 103px;
+    height: 39px;
   }
 }
 
@@ -30,6 +37,13 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+  }
+  .header {
+    padding: 0 18px;
+  }
+  .header__logo {
+    width: 77px;
+    height: 29px;
   }
   .header__search-button {
     display: block;
