@@ -124,12 +124,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      & img {
-         width: 120px;
-         height: 46px;
-      }
    }
+   &__logo {
+      width: 120px;
+      height: 46px;
+   }
+
    &__all-questions {
+      margin: 0 0 0 10px;
       text-decoration: none;
       font-family: "Circe";
       font-style: normal;
@@ -137,6 +139,10 @@
       font-size: 16px;
       line-height: 24px;
       color: #7749f8;
+   }
+   &__search-form {
+      flex: 0 1 40.78%;
+      margin: 0 10px;
    }
    &__search {
       // position: absolute;
@@ -147,7 +153,8 @@
       line-height: 24px;
       color: #808080;
       height: 40px;
-      width: 27.19%;
+      // width: 27.19%;
+      width: 100%;
       background: #f9f9f9;
       border-radius: 6px;
    }
@@ -156,7 +163,7 @@
    height: 100%;
    display: flex;
    align-items: center;
-   margin-left: auto;
+   // margin-left: auto;
    &__text {
       margin: 0 16px 0 0;
    }

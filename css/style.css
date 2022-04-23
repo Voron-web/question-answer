@@ -190,12 +190,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.header__wrapper img {
+.header__logo {
   width: 120px;
   height: 46px;
 }
 
 .header__all-questions {
+  margin: 0 0 0 10px;
   text-decoration: none;
   font-family: "Circe";
   font-style: normal;
@@ -203,6 +204,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 24px;
   color: #7749f8;
+}
+
+.header__search-form {
+  flex: 0 1 40.78%;
+  margin: 0 10px;
 }
 
 .header__search {
@@ -213,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   color: #808080;
   height: 40px;
-  width: 27.19%;
+  width: 100%;
   background: #f9f9f9;
   border-radius: 6px;
 }
@@ -222,7 +228,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 .profile__text {
