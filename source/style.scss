@@ -311,7 +311,7 @@ main {
          // width: 328px;
          height: 828px;
          background-color: #c4c4c4;
-         margin: 200px 15.15% 0 22.73%;
+         margin: 120px 15.15% 0 22.73%;
          opacity: 0.1;
       }
    }
@@ -322,7 +322,7 @@ main {
          // width: 328px;
          height: 480px;
          background-color: #c4c4c4;
-         margin: 200px 15.15% 0 22.73%;
+         margin: 120px 15.15% 0 22.73%;
          opacity: 0.1;
       }
    }
@@ -353,6 +353,27 @@ main {
 /////////////////////////////////////////////////////////////
 .questions-list {
    display: block;
+   margin: 0 0 120px 0;
+}
+.no-avatar {
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 20px;
+   color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   &_orange {
+      background-color: #fecba1;
+   }
+   &_pink {
+      background-color: #ffcccc;
+   }
+   &_blue {
+      background-color: #cce0ff;
+   }
 }
 .question {
    position: relative;
@@ -362,7 +383,9 @@ main {
    background-color: #fff;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
    border-radius: 16px;
-
+   &:not(:first-child) {
+      margin: 16px 0 0 0;
+   }
    &__avatar {
       flex: 0 0 auto;
       margin: 0 16px 0 0;
@@ -372,7 +395,11 @@ main {
       border-radius: 50%;
       overflow: hidden;
       & img {
-         object-fit: contain;
+         // min-height: 48px;
+         // min-width: 48px;
+         // width: 100%;
+         // height: 100%;
+         object-fit: cover;
          position: absolute;
          top: 50%;
          left: 50%;
@@ -381,6 +408,7 @@ main {
    }
 
    &__text-box {
+      width: 100%;
       // margin: 32px 32px 32px
    }
 
@@ -430,6 +458,8 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      color: #808080;
+      border: 1px solid #dbdbdb;
    }
    &__answer-button.check {
       background: #69cb39;
@@ -442,6 +472,9 @@ main {
          background: url("../img/main/check.svg") -6px 0 no-repeat;
       }
    }
+   &__answer-button.no-check {
+      color: #000;
+   }
    &__labels {
       display: flex;
       align-items: center;
@@ -452,6 +485,7 @@ main {
    }
 
    &__bookmark {
+      background: url("../img/main/bookmark.svg") 50% 50% no-repeat;
       width: 32px;
       height: 32px;
       border: 1px solid #dbdbdb;
@@ -462,10 +496,82 @@ main {
       &:hover {
          cursor: pointer;
       }
+      &.active {
+         background: url("../img/main/bookmark_red.svg") 50% 50% no-repeat;
+      }
    }
 }
 
 /////////////////////////////////////////////////////////////
+.footer {
+   // margin: 120px 0 0 0;
+   display: flex;
+   justify-content: space-between;
+   & div:first-child,
+   div:last-child {
+   }
+   &__left,
+   &__right {
+      flex: 1 1 27.5%;
+   }
+   &__container {
+      flex: 0 1 864px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      flex: 0 0 70%;
+      font-family: "Circe";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: underline;
+      margin: 24px 0 0 0;
+      & img {
+         width: 146px;
+         height: 56px;
+      }
+      & p {
+         display: flex;
+         margin: 24px 0;
+      }
+      & a {
+         color: #808080;
+         display: block;
+         // text-decoration: none;
+      }
+      & a:last-child {
+         margin: 0 0 0 24px;
+      }
+   }
+
+   &__social-copy {
+      flex: 0 0 30%;
+
+      display: flex;
+      flex-direction: column;
+      // justify-content: end;
+      align-items: flex-end;
+      margin: 40px 0 0 0;
+   }
+   &_social {
+      width: 184px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__copy {
+      margin: 40px 0 24px 0;
+      font-family: "Circe";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #cccccc;
+   }
+}
 
 /////////////////////////////////////////////////////////////
 

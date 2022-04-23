@@ -383,7 +383,7 @@ main {
 .columns__left div {
   height: 828px;
   background-color: #c4c4c4;
-  margin: 200px 15.15% 0 22.73%;
+  margin: 120px 15.15% 0 22.73%;
   opacity: 0.1;
 }
 
@@ -394,7 +394,7 @@ main {
 .columns__right div {
   height: 480px;
   background-color: #c4c4c4;
-  margin: 200px 15.15% 0 22.73%;
+  margin: 120px 15.15% 0 22.73%;
   opacity: 0.1;
 }
 
@@ -422,6 +422,31 @@ main {
 
 .questions-list {
   display: block;
+  margin: 0 0 120px 0;
+}
+
+.no-avatar {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-avatar_orange {
+  background-color: #fecba1;
+}
+
+.no-avatar_pink {
+  background-color: #ffcccc;
+}
+
+.no-avatar_blue {
+  background-color: #cce0ff;
 }
 
 .question {
@@ -432,6 +457,10 @@ main {
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
   border-radius: 16px;
+}
+
+.question:not(:first-child) {
+  margin: 16px 0 0 0;
 }
 
 .question__avatar {
@@ -445,11 +474,15 @@ main {
 }
 
 .question__avatar img {
-  object-fit: contain;
+  object-fit: cover;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.question__text-box {
+  width: 100%;
 }
 
 .question__name {
@@ -501,6 +534,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #808080;
+  border: 1px solid #dbdbdb;
 }
 
 .question__answer-button.check {
@@ -516,6 +551,10 @@ main {
   background: url("../img/main/check.svg") -6px 0 no-repeat;
 }
 
+.question__answer-button.no-check {
+  color: #000;
+}
+
 .question__labels {
   display: flex;
   align-items: center;
@@ -527,6 +566,7 @@ main {
 }
 
 .question__bookmark {
+  background: url("../img/main/bookmark.svg") 50% 50% no-repeat;
   width: 32px;
   height: 32px;
   border: 1px solid #dbdbdb;
@@ -538,6 +578,79 @@ main {
 
 .question__bookmark:hover {
   cursor: pointer;
+}
+
+.question__bookmark.active {
+  background: url("../img/main/bookmark_red.svg") 50% 50% no-repeat;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left, .footer__right {
+  flex: 1 1 27.5%;
+}
+
+.footer__container {
+  flex: 0 1 864px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  flex: 0 0 70%;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+  margin: 24px 0 0 0;
+}
+
+.footer__logo img {
+  width: 146px;
+  height: 56px;
+}
+
+.footer__logo p {
+  display: flex;
+  margin: 24px 0;
+}
+
+.footer__logo a {
+  color: #808080;
+  display: block;
+}
+
+.footer__logo a:last-child {
+  margin: 0 0 0 24px;
+}
+
+.footer__social-copy {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 40px 0 0 0;
+}
+
+.footer_social {
+  width: 184px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  margin: 40px 0 24px 0;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #cccccc;
 }
 
 @media (max-width: 1000px) {
