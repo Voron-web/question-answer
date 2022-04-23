@@ -13,6 +13,9 @@
    .profile {
       display: none;
    }
+   .header__all-questions {
+      display: none;
+   }
 }
 
 ////////////////////////////////////////////
@@ -30,5 +33,14 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
+   }
+   .header {
+      &__search-button {
+         display: block;
+      }
+      &__search-icon,
+      &__search {
+         display: none;
+      }
    }
 }

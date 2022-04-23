@@ -114,6 +114,7 @@ main {
    height: 80px;
    padding: 0 16.67%;
    &__wrapper {
+      position: relative;
       // margin: auto 0;
       height: 100%;
       display: flex;
@@ -140,6 +141,28 @@ main {
 
       flex: 0 1 40.78%;
       margin: 0 10px;
+   }
+   &__search-button {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 62px;
+      transform: translate(0, -50%);
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      &::after {
+         content: "";
+         width: 7px;
+         height: 2px;
+         background-color: #000;
+         border-radius: 2px;
+         position: absolute;
+         bottom: -3px;
+         right: -5px;
+         transform: rotate(45deg);
+      }
    }
    &__search {
       font-family: "Circe";
@@ -176,6 +199,7 @@ main {
       }
    }
 }
+
 .profile {
    position: relative;
    height: 100%;
@@ -185,14 +209,9 @@ main {
    &__text {
       margin: 0 16px 0 0;
    }
-
-   &__name {
-   }
-
    &__email {
       color: #808080;
    }
-
    &__avatar {
       position: relative;
       width: 48px;
@@ -223,6 +242,7 @@ main {
       transform: rotate(45deg) translate(50%, -50%);
    }
 }
+
 .burger__menu {
    display: none;
    width: 18px;

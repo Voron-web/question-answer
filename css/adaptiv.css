@@ -11,6 +11,9 @@
   .profile {
     display: none;
   }
+  .header__all-questions {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -27,5 +30,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+  }
+  .header__search-button {
+    display: block;
+  }
+  .header__search-icon, .header__search {
+    display: none;
   }
 }
