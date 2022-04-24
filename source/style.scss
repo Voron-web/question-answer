@@ -302,7 +302,6 @@ main {
 .columns {
    margin: 0 auto;
    display: flex;
-   // flex-direction: column;
    justify-content: center;
 
    &__left {
@@ -378,7 +377,11 @@ main {
 .question {
    // padding: 0 16px;
    position: relative;
-   display: flex;
+   display: grid;
+   grid-template-areas:
+      "avatar name"
+      "avatar text";
+
    padding: 32px;
    width: 100%;
    background-color: #fff;
@@ -388,6 +391,7 @@ main {
       margin-top: 16px;
    }
    &__avatar {
+      grid-area: avatar;
       flex: 0 0 auto;
       margin: 0 16px 0 0;
       position: relative;
@@ -396,10 +400,6 @@ main {
       border-radius: 50%;
       overflow: hidden;
       & img {
-         // min-height: 48px;
-         // min-width: 48px;
-         // width: 100%;
-         // height: 100%;
          object-fit: cover;
          position: absolute;
          top: 50%;
@@ -409,11 +409,13 @@ main {
    }
 
    &__text-box {
+      grid-area: text;
       width: 100%;
-      // margin: 32px 32px 32px
    }
 
    &__name {
+      margin: 0 0 12px 0;
+      grid-area: name;
       color: #808080;
    }
    &__point {
@@ -554,12 +556,10 @@ main {
       flex: 0 0 30%;
       display: flex;
       flex-direction: column;
-      // justify-content: end;
       align-items: flex-end;
       margin: 40px 0 0 0;
    }
    &_social {
-      // margin-left: auto;
    }
    &__social-block {
       display: flex;

@@ -38,6 +38,13 @@
   .title__ask-button {
     width: 100%;
   }
+  .question {
+    padding: 24px;
+  }
+  .question__avatar {
+    width: 40px;
+    height: 40px;
+  }
   .footer {
     padding: 25px 16px;
   }
@@ -82,6 +89,33 @@
   .footer__copy {
     margin: 0;
     flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .question {
+    padding: 16px;
+    grid-template-columns: 55px auto;
+    grid-template-areas: "avatar name" "text text";
+    align-items: flex-start;
+  }
+  .question__point {
+    display: none;
+  }
+  .question__avatar {
+    justify-self: start;
+  }
+  .question__name {
+    margin: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .question__time {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .question__menu {
+    display: none;
   }
 }
 
