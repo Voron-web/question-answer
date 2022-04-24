@@ -684,6 +684,14 @@ main {
   color: #808080;
 }
 
+.answer__user-name {
+  grid-area: user-name;
+}
+
+.answer__time {
+  grid-area: time;
+}
+
 .answer__point {
   width: 3px;
   height: 3px;
@@ -759,6 +767,7 @@ main {
 }
 
 .answer__right {
+  grid-area: right;
   color: #69cb39;
   margin: 0 0 0 48px;
   position: relative;
@@ -1017,6 +1026,9 @@ main {
     width: 40px;
     height: 40px;
   }
+  .answer {
+    padding: 24px;
+  }
   .footer__left {
     display: none;
   }
@@ -1037,6 +1049,23 @@ main {
   }
   .footer__copy {
     justify-self: start;
+  }
+  .your-answer {
+    padding: 16px 8px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "textarea " "attach " "checkbox" "button ";
+  }
+  .your-answer__avatar {
+    display: none;
+  }
+  .your-answer__textarea {
+    height: 240px;
+  }
+  .your-answer__checkbox {
+    margin: 0;
+  }
+  .your-answer__button {
+    width: 100%;
   }
 }
 
@@ -1062,6 +1091,14 @@ main {
     font-size: 14px;
     line-height: 16px;
   }
+  .question__images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .question__images img {
+    margin: 16px 0 0 0;
+    max-width: 100%;
+  }
   .question__menu {
     display: none;
   }
@@ -1069,6 +1106,33 @@ main {
     grid-template-columns: 1fr;
     row-gap: 40px;
     grid-template-areas: "logo" "social" "politics" "copy";
+  }
+  .answer {
+    padding: 16px;
+    grid-template-columns: 55px auto;
+    grid-template-areas: "avatar name" "text text";
+    align-items: flex-start;
+  }
+  .answer__point {
+    display: none;
+  }
+  .answer__avatar {
+    justify-self: start;
+  }
+  .answer__images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .answer__images img {
+    margin: 16px 0 0 0;
+    max-width: 100%;
+  }
+  .answer__name {
+    display: grid;
+    grid-template-areas: "right" "user-name" "time";
+  }
+  .answer__right {
+    margin: 0 0 0 26px;
   }
 }
 

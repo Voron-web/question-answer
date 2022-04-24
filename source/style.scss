@@ -583,10 +583,18 @@ main {
       }
    }
    &__name {
+      // display: grid;
       margin: 0 0 12px 0;
       grid-area: name;
       color: #808080;
    }
+   &__user-name {
+      grid-area: user-name;
+   }
+   &__time {
+      grid-area: time;
+   }
+
    &__point {
       width: 3px;
       height: 3px;
@@ -655,6 +663,7 @@ main {
       }
    }
    &__right {
+      grid-area: right;
       color: #69cb39;
       margin: 0 0 0 48px;
       position: relative;
