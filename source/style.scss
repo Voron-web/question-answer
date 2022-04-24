@@ -95,7 +95,18 @@ h3 {
    font-size: 12px;
    line-height: 16px;
 }
-
+.box {
+   width: 100%;
+   background-color: #fff;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+   border-radius: 16px;
+   &:not(:first-child) {
+      margin-top: 16px;
+   }
+   &_green {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02), -4px 0px 0px #98c746;
+   }
+}
 main {
    flex: 1 1 auto;
 }
@@ -388,13 +399,6 @@ main {
       "avatar name"
       "avatar text";
    padding: 32px;
-   width: 100%;
-   background-color: #fff;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
-   border-radius: 16px;
-   &:not(:first-child) {
-      margin-top: 16px;
-   }
 
    &__avatar {
       grid-area: avatar;
@@ -541,16 +545,7 @@ main {
       "avatar text";
 
    padding: 32px;
-   width: 100%;
-   background-color: #fff;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
-   border-radius: 16px;
-   &:not(:first-child) {
-      margin-top: 16px;
-   }
-   &_green {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02), -4px 0px 0px #98c746;
-   }
+
    &__avatar {
       grid-area: avatar;
       flex: 0 0 auto;
