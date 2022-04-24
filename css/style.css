@@ -617,7 +617,7 @@ main {
   background: url("../img/main/bookmark_red.svg") 50% 50% no-repeat;
 }
 
-.best-answer {
+.answer-title h1 {
   margin: 80px 0 40px 0;
 }
 
@@ -716,6 +716,20 @@ main {
   background-color: #808080;
 }
 
+.answer__images {
+  margin: 24px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.answer__images img {
+  border-radius: 8px;
+  flex: 0 0 30%;
+  object-fit: cover;
+  max-width: 30%;
+}
+
 .answer__info {
   margin: 24px 0 0 0;
   display: flex;
@@ -739,6 +753,10 @@ main {
   width: 24px;
   height: 24px;
   background: url("../img/answer/no_like.svg") -4px 0 no-repeat;
+}
+
+.answer__button.like::before {
+  background: url("../img/answer/like.svg") -4px 0 no-repeat;
 }
 
 .answer__right {
