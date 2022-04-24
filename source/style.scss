@@ -313,6 +313,9 @@ main {
          margin: 120px 15.15% 0 22.73%;
          opacity: 0.1;
       }
+      &_answer div {
+         margin: 80px 15.15% 0 22.73%;
+      }
    }
 
    &__right {
@@ -323,6 +326,9 @@ main {
          background-color: #c4c4c4;
          margin: 120px 15.15% 0 22.73%;
          opacity: 0.1;
+      }
+      &_answer div {
+         margin: 80px 15.15% 0 22.73%;
       }
    }
 }
@@ -377,10 +383,10 @@ main {
 .question {
    position: relative;
    display: grid;
+   justify-content: start;
    grid-template-areas:
       "avatar name"
       "avatar text";
-
    padding: 32px;
    width: 100%;
    background-color: #fff;
@@ -389,6 +395,7 @@ main {
    &:not(:first-child) {
       margin-top: 16px;
    }
+
    &__avatar {
       grid-area: avatar;
       flex: 0 0 auto;
@@ -411,7 +418,18 @@ main {
       grid-area: text;
       width: 100%;
    }
-
+   &__images {
+      margin: 24px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+      & img {
+         border-radius: 8px;
+         flex: 0 0 30%;
+         object-fit: cover;
+         max-width: 30%;
+      }
+   }
    &__name {
       margin: 0 0 12px 0;
       grid-area: name;
@@ -452,6 +470,9 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      &_answer {
+         margin: 40px 0 0 0;
+      }
    }
    &__answer-button {
       // width: 115px;
@@ -501,6 +522,139 @@ main {
       }
       &.active {
          background: url("../img/main/bookmark_red.svg") 50% 50% no-repeat;
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////////
+.best-answer {
+   margin: 80px 0 40px 0;
+}
+.answer {
+   position: relative;
+   display: grid;
+   justify-content: start;
+   grid-template-areas:
+      "avatar name"
+      "avatar text";
+
+   padding: 32px;
+   width: 100%;
+   background-color: #fff;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+   border-radius: 16px;
+   &:not(:first-child) {
+      margin-top: 16px;
+   }
+   &_green {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02), -4px 0px 0px #98c746;
+   }
+   &__avatar {
+      grid-area: avatar;
+      flex: 0 0 auto;
+      margin: 0 16px 0 0;
+      position: relative;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      & img {
+         object-fit: cover;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+
+   &__text-box {
+      grid-area: text;
+      width: 100%;
+   }
+   &__images {
+      margin: 24px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+      & img {
+         border-radius: 8px;
+         flex: 0 0 30%;
+         object-fit: cover;
+         max-width: 30%;
+      }
+   }
+   &__name {
+      margin: 0 0 12px 0;
+      grid-area: name;
+      color: #808080;
+   }
+   &__point {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #808080;
+      display: inline-block;
+      margin: 0 8px 3px;
+   }
+
+   &__menu {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 3px;
+      height: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:hover {
+         cursor: pointer;
+      }
+      & div {
+         width: 3px;
+         height: 3px;
+         border-radius: 50%;
+         background-color: #808080;
+      }
+   }
+   &__info {
+      margin: 24px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__button {
+      // width: auto;
+      height: 40px;
+      padding: 0 12px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      border: 1px solid #dbdbdb;
+      &::before {
+         content: "";
+         width: 24px;
+         height: 24px;
+         background: url("../img/answer/no_like.svg") -4px 0 no-repeat;
+      }
+   }
+   &__right {
+      color: #69cb39;
+      margin: 0 0 0 48px;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: -32px;
+         width: 24px;
+         height: 24px;
+         background-image: url("../img/answer/check.svg");
+      }
+      &_off {
+         display: none;
       }
    }
 }
@@ -573,6 +727,11 @@ main {
       line-height: 20px;
       color: #cccccc;
    }
+}
+
+/////////////////////////////////////////////////////////////
+.question-alone {
+   margin: 80px 0 0 0;
 }
 
 /////////////////////////////////////////////////////////////
