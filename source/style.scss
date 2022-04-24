@@ -104,7 +104,10 @@ h3 {
       margin-top: 16px;
    }
    &_green {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02), -4px 0px 0px #98c746;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02), -4px 0px 0px -1px #98c746;
+   }
+   &_blue {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02), -4px 0px 1px -1px #7749f8;
    }
 }
 main {
@@ -543,7 +546,6 @@ main {
    grid-template-areas:
       "avatar name"
       "avatar text";
-
    padding: 32px;
 
    &__avatar {
@@ -744,6 +746,122 @@ main {
 /////////////////////////////////////////////////////////////
 .question-alone {
    margin: 80px 0 0 0;
+}
+
+/////////////////////////////////////////////////////////////
+
+.your-answer {
+   padding: 32px;
+   display: grid;
+   row-gap: 16px;
+   justify-items: flex-start;
+   grid-template-columns: 64px max-content auto;
+   grid-template-areas:
+      "avatar textarea textarea"
+      "avatar attach attach"
+      "avatar button checkbox";
+   &__avatar {
+      grid-area: avatar;
+      position: relative;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      & img {
+         object-fit: cover;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+   &__textarea {
+      grid-area: textarea;
+      height: 160px;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      width: 100%;
+      resize: none;
+      padding: 16px;
+   }
+
+   &__attach {
+      grid-area: attach;
+      align-self: center;
+   }
+
+   &__photo {
+      padding: 0 0 0 28px;
+      color: #7749f8;
+      position: relative;
+      &::before {
+         content: "";
+         width: 24px;
+         height: 24px;
+         background: url("../img/answer/photo.svg");
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+   }
+
+   &__video {
+      color: #000;
+      padding: 0 0 0 28px;
+      position: relative;
+      &::before {
+         content: "";
+         width: 24px;
+         height: 24px;
+         background: url("../img/answer/video.svg");
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+   }
+
+   &__button {
+      grid-area: button;
+      width: 214px;
+      height: 48px;
+      background-color: #7749f8;
+      border-radius: 6px;
+      color: #fff;
+   }
+   &__checkbox {
+      align-self: center;
+      grid-area: checkbox;
+      margin: 0 0 0 24px;
+      & span {
+         margin: 0 0 0 8px;
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////////
+
+.ask-block {
+   margin: 80px 0 120px 0;
+}
+.ask {
+   height: 112px;
+   padding: 32px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &__text {
+   }
+
+   &__button {
+      width: 198px;
+      height: 48px;
+      background-color: #7749f8;
+      border-radius: 6px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
 }
 
 /////////////////////////////////////////////////////////////
