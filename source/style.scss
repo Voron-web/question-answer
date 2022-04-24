@@ -375,7 +375,6 @@ main {
    }
 }
 .question {
-   // padding: 0 16px;
    position: relative;
    display: grid;
    grid-template-areas:
@@ -509,46 +508,30 @@ main {
 /////////////////////////////////////////////////////////////
 .footer {
    padding: 0 16px;
-   // margin: 120px 0 0 0;
    display: flex;
    justify-content: space-between;
-   // & div:first-child,
-   // div:last-child {
-   // }
+
    &__left,
    &__right {
       flex: 1 1 27.5%;
    }
    &__container {
+      padding: 24px 0;
       flex: 0 1 864px;
-      display: flex;
+      display: grid;
+      row-gap: 24px;
+      grid-template-areas:
+         "logo social"
+         "politics copy";
       justify-content: space-between;
+      align-items: center;
    }
 
    &__logo {
-      flex: 0 0 70%;
-      font-family: "Circe";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      text-decoration: underline;
-      margin: 24px 0 0 0;
+      grid-area: logo;
       & img {
          width: 146px;
          height: 56px;
-      }
-      & p {
-         display: flex;
-         margin: 24px 0;
-      }
-      & a {
-         color: #808080;
-         display: block;
-         // text-decoration: none;
-      }
-      & a:last-child {
-         margin: 0 0 0 24px;
       }
    }
 
@@ -559,16 +542,30 @@ main {
       align-items: flex-end;
       margin: 40px 0 0 0;
    }
-   &_social {
+   &__social {
+      grid-area: social;
    }
    &__social-block {
       display: flex;
       justify-content: space-between;
-      max-width: 184px;
+      width: 184px;
    }
-
+   &__politics {
+      grid-area: politics;
+      font-family: "Circe";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: underline;
+      & a {
+         color: #808080;
+         margin: 0 10px 0 0;
+      }
+   }
    &__copy {
-      margin: 40px 0 24px 0;
+      grid-area: copy;
+      justify-self: end;
       font-family: "Circe";
       font-style: normal;
       font-weight: 400;
