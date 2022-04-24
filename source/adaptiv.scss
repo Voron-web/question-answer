@@ -2,6 +2,16 @@
    .header {
       padding: 0 5.67%;
    }
+   .columns {
+      &__right {
+         display: none;
+      }
+   }
+   .footer {
+      &__right {
+         display: none;
+      }
+   }
 }
 
 ////////////////////////////////////////////
@@ -10,9 +20,11 @@
    .burger__menu {
       display: block;
    }
+
    .profile {
       display: none;
    }
+
    .header {
       padding: 0 18px;
       &__all-questions {
@@ -23,8 +35,74 @@
          height: 39px;
       }
    }
-}
 
+   .columns {
+      &__left {
+         display: none;
+      }
+   }
+
+   .title {
+      margin: 80px 0 40px 0;
+      flex-direction: column;
+      align-items: flex-start;
+      &__ask-button {
+         width: 100%;
+      }
+   }
+   .footer {
+      padding: 25px 16px;
+      // flex-direction: column;
+      &__left {
+         display: none;
+      }
+      &__container {
+         flex: 1 1 auto;
+         flex-direction: column;
+      }
+      &__logo {
+         margin: 0;
+         // width: 100%;
+         flex: 1 1 auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         & img {
+            width: 104px;
+            height: 40px;
+         }
+         & a {
+            flex: 0 0 50%;
+         }
+         & a:last-child {
+            margin: 8px 0 0 0;
+         }
+         & p {
+            flex: 0 0 50%;
+            flex-direction: column;
+            margin: 0;
+         }
+      }
+      &__social-copy {
+         flex: 1 1 auto;
+         flex-direction: row;
+         align-items: center;
+      }
+      &_social {
+         padding: 0 10px 0 0;
+         // width: auto;
+
+         flex: 0 0 50%;
+      }
+      &__copy {
+         margin: 0;
+         flex: 0 0 50%;
+      }
+   }
+}
+////////////////////////////////////////////
+@media (max-width: 425px) {
+}
 ////////////////////////////////////////////
 @media (max-width: 320px) {
    h1 {
