@@ -27,6 +27,9 @@
     width: 103px;
     height: 39px;
   }
+  .header__button-login {
+    display: none;
+  }
   .columns__left {
     display: none;
   }
@@ -150,8 +153,21 @@
     display: grid;
     grid-template-areas: "right" "user-name" "time";
   }
+  .answer__menu {
+    display: none;
+  }
   .answer__right {
     margin: 0 0 0 26px;
+  }
+  .ask-block {
+    margin: 80px 0 80px 0;
+  }
+  .ask {
+    flex-direction: column;
+  }
+  .ask__button {
+    width: 100%;
+    margin: 24px 0 0 0;
   }
 }
 

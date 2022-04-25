@@ -34,6 +34,9 @@
          width: 103px;
          height: 39px;
       }
+      &__button-login {
+         display: none;
+      }
    }
 
    .columns {
@@ -199,8 +202,22 @@
             "user-name"
             "time";
       }
+      &__menu {
+         display: none;
+      }
+
       &__right {
          margin: 0 0 0 26px;
+      }
+   }
+   .ask-block {
+      margin: 80px 0 80px 0;
+   }
+   .ask {
+      flex-direction: column;
+      &__button {
+         width: 100%;
+         margin: 24px 0 0 0;
       }
    }
 }
