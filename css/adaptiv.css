@@ -112,6 +112,38 @@
   .your-answer__button {
     width: 100%;
   }
+  .registration {
+    padding: 80px 16px 40px;
+    width: 100%;
+    display: grid;
+    column-gap: 24px;
+    row-gap: 40px;
+    grid-template-areas: "title title" "name email" "pass repeat-pass" "info info";
+  }
+  .registration__name {
+    margin: 0;
+  }
+  .registration__email {
+    margin: 0;
+  }
+  .registration__pass {
+    margin: 0;
+  }
+  .registration__repeat-pass {
+    margin: 0;
+  }
+  .registration__info {
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .registration__info button {
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .input-form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -191,6 +223,24 @@
   .ask__button {
     width: 100%;
     margin: 24px 0 0 0;
+  }
+  .registration {
+    display: block;
+  }
+  .registration__name {
+    margin: 40px 0 0 0;
+  }
+  .registration__email {
+    margin: 16px 0 0 0;
+  }
+  .registration__pass {
+    margin: 40px 0 0 0;
+  }
+  .registration__repeat-pass {
+    margin: 16px 0 0 0;
+  }
+  .registration__info {
+    margin: 40px 0 0 0;
   }
 }
 
