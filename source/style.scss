@@ -50,9 +50,7 @@
    font-weight: 600;
    font-style: normal;
 }
-// body {
-//    overflow: hidden;
-// }
+
 h1 {
    font-family: "Circe";
    font-style: normal;
@@ -131,14 +129,11 @@ main {
    height: 80px;
    padding: 0 16.67%;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
-   // overflow: hidden;
    z-index: 5;
    background: #fff;
 
    &__wrapper {
-      // overflow: hidden;
       position: relative;
-      // margin: auto 0;
       height: 100%;
       display: flex;
       justify-content: space-between;
@@ -198,7 +193,6 @@ main {
       color: #808080;
       text-indent: 42px;
       height: 40px;
-      // width: 27.19%;
       width: 100%;
       background: #f9f9f9;
       border-radius: 6px;
@@ -242,7 +236,6 @@ main {
    height: 100%;
    display: flex;
    align-items: center;
-   // margin-left: auto;
    &__text {
       margin: 0 16px 0 0;
    }
@@ -265,7 +258,6 @@ main {
       }
    }
    &__arrow {
-      // content: attr(data-arrow);
       position: absolute;
       top: 50%;
       right: -20px;
@@ -274,12 +266,10 @@ main {
       border-top: 1.5px solid #7749f8;
       border-left: 1.5px solid #7749f8;
       transform-origin: 50% 50%;
-      // transform: rotate(-135deg) translate(0, 50%);
       transform: rotate(-135deg);
       transition: 0.5s;
       &.active {
          transform: rotate(45deg);
-         // transform: rotate(45deg) translate(50%, -50%);
       }
    }
 }
@@ -351,7 +341,6 @@ main {
    transition: 1s;
    &__profile {
       display: none;
-      // display: flex;
    }
    &__button {
       width: 100%;
@@ -410,7 +399,6 @@ main {
    &__left {
       flex: 0 1 27.5%;
       & div {
-         // width: 328px;
          height: 828px;
          background-color: #c4c4c4;
          margin: 120px 15.15% 0 22.73%;
@@ -419,12 +407,14 @@ main {
       &_answer div {
          margin: 80px 15.15% 0 22.73%;
       }
+      &_new-question div {
+         height: 480px;
+      }
    }
 
    &__right {
       flex: 0 1 27.5%;
       & div {
-         // width: 328px;
          height: 480px;
          background-color: #c4c4c4;
          margin: 120px 15.15% 0 22.73%;
@@ -571,7 +561,6 @@ main {
       }
    }
    &__answer-button {
-      // width: 115px;
       height: 40px;
       padding: 0 16px;
       border-radius: 6px;
@@ -672,7 +661,6 @@ main {
       }
    }
    &__name {
-      // display: grid;
       margin: 0 0 12px 0;
       grid-area: name;
       color: #808080;
@@ -732,7 +720,6 @@ main {
       align-items: center;
    }
    &__button {
-      // width: auto;
       height: 40px;
       padding: 0 12px;
       border-radius: 6px;
@@ -842,13 +829,14 @@ main {
 }
 
 /////////////////////////////////////////////////////////////
+
 .question-alone {
    margin: 80px 0 0 0;
 }
 
 /////////////////////////////////////////////////////////////
 
-.your-answer {
+.textarea-block {
    position: relative;
    padding: 32px;
    display: grid;
@@ -967,7 +955,6 @@ main {
    margin: 80px 0 120px 0;
 }
 .ask {
-   // height: 112px;
    padding: 32px 16px;
    display: flex;
    justify-content: space-between;
@@ -1032,9 +1019,7 @@ main {
    &__error-reg {
       display: none;
       position: absolute;
-      // bottom: -30px;
       top: 140%;
-      // transform: translate(0, 200%);
       left: 0;
       transform: translate(0, -50%);
       color: #ff7979;
@@ -1129,7 +1114,6 @@ main {
    }
 
    & button {
-      // flex: 0 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1138,8 +1122,6 @@ main {
       background-color: #7749f8;
       border-radius: 6px;
       color: #fff;
-   }
-   &__inputs {
    }
 }
 
@@ -1171,8 +1153,35 @@ main {
 
 /////////////////////////////////////////////////////////////
 
-@import "adaptiv.scss";
-
-* {
-   // border: 1px solid red;
+.new-question {
+   margin: 40px 0 0 0;
+   padding: 32px;
+   display: grid;
+   row-gap: 16px;
+   justify-items: flex-start;
+   grid-template-columns: 64px auto;
+   grid-template-areas:
+      "avatar input"
+      "avatar textarea"
+      "avatar attach"
+      "avatar button";
+   &__title {
+      margin: 40px 0 16px 0;
+   }
+   &__textarea-question {
+      height: 56px;
+      grid-area: input;
+   }
 }
+
+.question__rights {
+   margin: 0 0 120px 0;
+   color: #808080;
+   & a {
+      color: #808080;
+      text-decoration: underline;
+   }
+}
+/////////////////////////////////////////////////////////////
+
+@import "adaptiv.scss";

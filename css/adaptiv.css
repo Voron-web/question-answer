@@ -95,21 +95,24 @@
   .footer__copy {
     justify-self: start;
   }
-  .your-answer {
+  .textarea-block {
     padding: 16px 8px;
     grid-template-columns: 1fr;
     grid-template-areas: "textarea " "attach " "checkbox" "button ";
   }
-  .your-answer__avatar {
+  .textarea-block__avatar {
     display: none;
   }
-  .your-answer__textarea {
+  .textarea-block__input {
+    height: 80px;
+  }
+  .textarea-block__textarea {
     height: 240px;
   }
-  .your-answer__checkbox {
+  .textarea-block__checkbox {
     margin: 0;
   }
-  .your-answer__button {
+  .textarea-block__button {
     width: 100%;
   }
   .registration {
@@ -183,6 +186,19 @@
   }
   .recover button {
     width: 100%;
+  }
+  .new-question {
+    grid-template-columns: 1fr;
+    grid-template-areas: "input" "textarea" "attach" "button";
+  }
+  .new-question__title {
+    margin: 80px 0 16px 0;
+  }
+  .new-question__textarea-question {
+    height: 80px;
+  }
+  .question__rights {
+    margin: 0 0 80px 0;
   }
 }
 
@@ -307,6 +323,12 @@
   .recover button {
     margin: 24px 0 0 0;
     width: 100%;
+  }
+  .new-question {
+    margin: 24px 0 0 0;
+  }
+  .new-question__title {
+    margin: 40px 0 16px 0;
   }
 }
 

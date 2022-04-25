@@ -498,6 +498,10 @@ main {
   margin: 80px 15.15% 0 22.73%;
 }
 
+.columns__left_new-question div {
+  height: 480px;
+}
+
 .columns__right {
   flex: 0 1 27.5%;
 }
@@ -952,7 +956,7 @@ main {
   margin: 80px 0 0 0;
 }
 
-.your-answer {
+.textarea-block {
   position: relative;
   padding: 32px;
   display: grid;
@@ -962,7 +966,7 @@ main {
   grid-template-areas: "avatar textarea textarea" "avatar attach attach" "avatar button checkbox";
 }
 
-.your-answer__avatar {
+.textarea-block__avatar {
   grid-area: avatar;
   position: relative;
   width: 48px;
@@ -972,7 +976,7 @@ main {
   background-color: #cccccc;
 }
 
-.your-answer__avatar img {
+.textarea-block__avatar img {
   object-fit: cover;
   position: absolute;
   top: 50%;
@@ -980,7 +984,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.your-answer__textarea {
+.textarea-block__textarea {
   grid-area: textarea;
   height: 160px;
   border: 1px solid #dbdbdb;
@@ -990,18 +994,18 @@ main {
   padding: 16px;
 }
 
-.your-answer__attach {
+.textarea-block__attach {
   grid-area: attach;
   align-self: center;
 }
 
-.your-answer__photo {
+.textarea-block__photo {
   padding: 0 0 0 28px;
   color: #7749f8;
   position: relative;
 }
 
-.your-answer__photo::before {
+.textarea-block__photo::before {
   content: "";
   width: 24px;
   height: 24px;
@@ -1011,13 +1015,13 @@ main {
   left: 0;
 }
 
-.your-answer__video {
+.textarea-block__video {
   color: #000;
   padding: 0 0 0 28px;
   position: relative;
 }
 
-.your-answer__video::before {
+.textarea-block__video::before {
   content: "";
   width: 24px;
   height: 24px;
@@ -1027,7 +1031,7 @@ main {
   left: 0;
 }
 
-.your-answer__button {
+.textarea-block__button {
   grid-area: button;
   width: 214px;
   height: 48px;
@@ -1036,17 +1040,17 @@ main {
   color: #fff;
 }
 
-.your-answer__checkbox {
+.textarea-block__checkbox {
   align-self: center;
   grid-area: checkbox;
   margin: 0 0 0 24px;
 }
 
-.your-answer__checkbox span {
+.textarea-block__checkbox span {
   margin: 0 0 0 8px;
 }
 
-.your-answer__logout {
+.textarea-block__logout {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1054,7 +1058,7 @@ main {
   background: rgba(255, 255, 255, 0.7);
 }
 
-.your-answer__button-login {
+.textarea-block__button-login {
   width: 100%;
   height: 72px;
   padding: 24px 32px;
@@ -1066,7 +1070,7 @@ main {
   justify-content: start;
 }
 
-.your-answer__button-login a {
+.textarea-block__button-login a {
   color: #fff;
   text-decoration: underline;
 }
@@ -1273,6 +1277,35 @@ main {
   color: #fff;
 }
 
+.new-question {
+  margin: 40px 0 0 0;
+  padding: 32px;
+  display: grid;
+  row-gap: 16px;
+  justify-items: flex-start;
+  grid-template-columns: 64px auto;
+  grid-template-areas: "avatar input" "avatar textarea" "avatar attach" "avatar button";
+}
+
+.new-question__title {
+  margin: 40px 0 16px 0;
+}
+
+.new-question__textarea-question {
+  height: 56px;
+  grid-area: input;
+}
+
+.question__rights {
+  margin: 0 0 120px 0;
+  color: #808080;
+}
+
+.question__rights a {
+  color: #808080;
+  text-decoration: underline;
+}
+
 @media (max-width: 1000px) {
   .header {
     padding: 0 5.67%;
@@ -1370,21 +1403,24 @@ main {
   .footer__copy {
     justify-self: start;
   }
-  .your-answer {
+  .textarea-block {
     padding: 16px 8px;
     grid-template-columns: 1fr;
     grid-template-areas: "textarea " "attach " "checkbox" "button ";
   }
-  .your-answer__avatar {
+  .textarea-block__avatar {
     display: none;
   }
-  .your-answer__textarea {
+  .textarea-block__input {
+    height: 80px;
+  }
+  .textarea-block__textarea {
     height: 240px;
   }
-  .your-answer__checkbox {
+  .textarea-block__checkbox {
     margin: 0;
   }
-  .your-answer__button {
+  .textarea-block__button {
     width: 100%;
   }
   .registration {
@@ -1458,6 +1494,19 @@ main {
   }
   .recover button {
     width: 100%;
+  }
+  .new-question {
+    grid-template-columns: 1fr;
+    grid-template-areas: "input" "textarea" "attach" "button";
+  }
+  .new-question__title {
+    margin: 80px 0 16px 0;
+  }
+  .new-question__textarea-question {
+    height: 80px;
+  }
+  .question__rights {
+    margin: 0 0 80px 0;
   }
 }
 
@@ -1582,6 +1631,12 @@ main {
   .recover button {
     margin: 24px 0 0 0;
     width: 100%;
+  }
+  .new-question {
+    margin: 24px 0 0 0;
+  }
+  .new-question__title {
+    margin: 40px 0 16px 0;
   }
 }
 
