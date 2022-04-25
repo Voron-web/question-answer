@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Вопрос-ответ</title>
+	<!--Заголовок-->
+	<meta http-equiv="Content-type" content="text/html" ;charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<a href="#"><img class="header__logo" src="img/logo.png" alt=""></a>
+				<a class="header__all-questions" href="#">Все вопросы</a>
+				<form class="header__search-form" action="">
+					<input class="header__search" type="text" placeholder="Поиск">
+					<div class="header__search-icon"></div>
+				</form>
+				<div class="header__button-login">
+					<a class="p16_24" href="#">Войти</a>
+				</div>
+				<div class="header__search-button"></div>
+				<div class="burger__menu-button">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+
+		<main>
+			<div class="registration">
+				<form action="">
+					<h1>Создание аккаунта</h1>
+					<span class="p16_24">Уже зарегистрированы? </span>
+					<a class="p16_24" href="#">Войти</a>
+
+					<div class="registration__name input_up">
+						<div class="input_up__placeholder">
+							<span class="input12_16">Имя и фамилия</span>
+						</div>
+						<input class="input-form p16_24" type="text">
+					</div>
+
+					<div class="registration__email input_up">
+						<div class="input_up__placeholder">
+							<span class="input12_16">Почта</span>
+						</div>
+						<span class="input__error error small_text14_16">Неверный формат</span>
+						<span class="input__error-reg error small_text14_16">Пользователь с такой почтой уже
+							зарегистрирован</span>
+
+						<input class="input-form error p16_24" type="text">
+					</div>
+
+					<div class="registration__pass input_up">
+						<div class="input_up__placeholder">
+							<span class="input12_16">Пароль</span>
+						</div>
+						<input class="input-form p16_24" type="password">
+					</div>
+					<div class="registration__repit-pass">
+						<input class="input-form p16_24" type="password" placeholder="Повторите пароль">
+					</div>
+					<div class="registration__info">
+						<button class=" button16_24">Создать аккаунт</button>
+						<div class="small_text14_16">
+							<span class="small_text14_16">Нажимая на кнопку вы соглашаетесь </span>
+							<a class="small_text14_16" href="">со всем с чем нужно согласиться</a>
+						</div>
+					</div>
+				</form>
+
+			</div>
+
+		</main>
+	</div>
+</body>
+
+</html>

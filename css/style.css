@@ -1080,6 +1080,114 @@ main {
   align-items: center;
 }
 
+.input_up {
+  position: relative;
+  border-radius: 8px;
+}
+
+.input_up__placeholder {
+  padding: 0 4px;
+  background: #fff;
+  position: absolute;
+  top: -1px;
+  left: 12px;
+}
+
+.input_up__placeholder span {
+  color: #808080;
+  position: relative;
+  top: -7px;
+}
+
+.input-form {
+  background: #fff;
+  border-radius: 8px;
+  width: 400px;
+  height: 48px;
+  border: 1px solid #dbdbdb;
+  padding: 0 16px;
+}
+
+.input-form.error {
+  border: 1px solid #ff7979;
+}
+
+.input__error {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translate(0, -50%);
+  color: #ff7979;
+}
+
+.input__error.error {
+  display: block;
+}
+
+.input__error-reg {
+  display: none;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  transform: translate(0, -50%);
+  color: #ff7979;
+}
+
+.input__error-reg.error {
+  display: block;
+}
+
+.registration {
+  margin: 0 auto;
+  width: 400px;
+  padding: 129px 0;
+}
+
+.registration form > a {
+  color: #7749f8;
+}
+
+.registration__name {
+  margin: 40px 0 0 0;
+}
+
+.registration__email {
+  margin: 16px 0 0 0;
+}
+
+.registration__pass {
+  margin: 40px 0 0 0;
+}
+
+.registration__repit-pass {
+  margin: 16px 0 0 0;
+}
+
+.registration__info {
+  display: flex;
+  align-items: center;
+  color: #aaaaaa;
+  margin: 40px 0 0 0;
+}
+
+.registration__info button {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px 0 0;
+  padding: 12px 24px;
+  background-color: #7749f8;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.registration__info a {
+  color: #aaaaaa;
+  text-decoration: underline;
+}
+
 @media (max-width: 1000px) {
   .header {
     padding: 0 5.67%;
