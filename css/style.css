@@ -394,6 +394,7 @@ main {
   top: 45%;
   left: 0;
   transform: rotate(45deg);
+  background-color: #7749f8;
 }
 
 .burger__menu-button.active div:nth-child(2) {
@@ -403,6 +404,7 @@ main {
 .burger__menu-button.active div:nth-child(3) {
   bottom: 45%;
   transform: rotate(-45deg);
+  background-color: #7749f8;
 }
 
 .burger-menu {
@@ -421,6 +423,17 @@ main {
 
 .burger-menu__profile {
   display: none;
+}
+
+.burger-menu__button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #7749f8;
+  border-radius: 8px;
+  color: #000;
 }
 
 .burger-menu__list li {
