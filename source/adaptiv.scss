@@ -144,6 +144,7 @@
       }
    }
    .registration {
+      margin: 0;
       padding: 80px 16px 40px;
       width: 100%;
       display: grid;
@@ -212,6 +213,22 @@
       & button {
          width: 100%;
          margin: 40px 0 0 0;
+      }
+   }
+
+   .recover {
+      width: 100%;
+      margin: 0;
+      padding: 80px 16px 40px;
+      &__text {
+         margin: 8px 0 0 0;
+      }
+      &__email {
+         margin: 40px 0 0 0;
+         max-width: 400px;
+      }
+      & button {
+         width: 100%;
       }
    }
 }
@@ -346,7 +363,6 @@
    }
    .enter {
       &__inputs {
-         // width: 100%;
          display: flex;
          row-gap: 16px;
          flex-direction: column;
@@ -356,6 +372,22 @@
          & div {
             margin: 0;
          }
+      }
+   }
+
+   .recover {
+      padding: 40px 16px;
+      &__text {
+         margin: 24px 0 0 0;
+      }
+      &__email {
+         margin: 16px 0 0 0;
+         max-width: none;
+         width: 100%;
+      }
+      & button {
+         margin: 24px 0 0 0;
+         width: 100%;
       }
    }
 }

@@ -113,6 +113,7 @@
     width: 100%;
   }
   .registration {
+    margin: 0;
     padding: 80px 16px 40px;
     width: 100%;
     display: grid;
@@ -167,6 +168,21 @@
   .enter button {
     width: 100%;
     margin: 40px 0 0 0;
+  }
+  .recover {
+    width: 100%;
+    margin: 0;
+    padding: 80px 16px 40px;
+  }
+  .recover__text {
+    margin: 8px 0 0 0;
+  }
+  .recover__email {
+    margin: 40px 0 0 0;
+    max-width: 400px;
+  }
+  .recover button {
+    width: 100%;
   }
 }
 
@@ -276,6 +292,21 @@
   }
   .enter__inputs div {
     margin: 0;
+  }
+  .recover {
+    padding: 40px 16px;
+  }
+  .recover__text {
+    margin: 24px 0 0 0;
+  }
+  .recover__email {
+    margin: 16px 0 0 0;
+    max-width: none;
+    width: 100%;
+  }
+  .recover button {
+    margin: 24px 0 0 0;
+    width: 100%;
   }
 }
 

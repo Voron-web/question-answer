@@ -1043,6 +1043,9 @@ main {
       }
    }
 }
+
+/////////////////////////////////////////////////////////////
+
 .registration {
    margin: 0 0 0 27%;
    width: 400px;
@@ -1098,6 +1101,7 @@ main {
       }
    }
 }
+/////////////////////////////////////////////////////////////
 
 .enter {
    margin: 0 0 0 27%;
@@ -1136,6 +1140,32 @@ main {
       color: #fff;
    }
    &__inputs {
+   }
+}
+
+/////////////////////////////////////////////////////////////
+
+.recover {
+   margin: 0 0 0 27%;
+   width: 512px;
+   padding: 120px 0;
+
+   &__text {
+      margin: 40px 0 0 0;
+   }
+
+   &__email {
+      margin: 16px 0 0 0;
+   }
+   & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0 0 0;
+      padding: 12px 57.5px;
+      background-color: #7749f8;
+      border-radius: 6px;
+      color: #fff;
    }
 }
 
