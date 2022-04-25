@@ -339,7 +339,7 @@ main {
    padding: 16px;
    background-color: #fff;
    position: absolute;
-   top: -150px;
+   top: -100%;
    right: 14%;
    width: 200px;
    height: 200px;
@@ -349,7 +349,9 @@ main {
    transition: 1s;
    &__profile {
       display: none;
+      // display: flex;
    }
+
    &__list {
       & li {
          display: flex;
@@ -366,6 +368,7 @@ main {
 
       & li:first-child {
          display: none;
+         margin: 0 0 24px 0;
       }
 
       & li:not(:first-child):not(:nth-child(2)) {
@@ -379,7 +382,7 @@ main {
       }
    }
    &.active {
-      top: 100px;
+      top: 96px;
       z-index: 2;
    }
 }

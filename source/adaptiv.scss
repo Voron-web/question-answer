@@ -24,9 +24,36 @@
    .burger__menu-button {
       display: block;
    }
+   .burger-menu {
+      width: 100%;
+      border-radius: 0;
+      height: auto;
+      right: 0;
+      top: -110%;
 
-   .profile {
+      &__profile {
+         display: flex;
+         margin: 0 0 24px 0;
+      }
+      &__list {
+         & li:first-child {
+            display: flex;
+            // align-items: center;
+            // & a {
+            //    margin: 0 0 24px 0;
+            // }
+         }
+      }
+      &.active {
+         top: 80px;
+      }
+   }
+
+   .profile_header {
       display: none;
+   }
+   .profile__avatar {
+      margin: 0 16px 0 0;
    }
 
    .header {
@@ -242,6 +269,7 @@
       line-height: 24px;
    }
    .header {
+      height: 48px;
       padding: 0 18px;
       &__logo {
          width: 77px;
@@ -254,6 +282,12 @@
       &__search-icon,
       &__search {
          display: none;
+      }
+   }
+   .burger-menu {
+      top: -150%;
+      &.active {
+         top: 48px;
       }
    }
 }

@@ -17,8 +17,28 @@
   .burger__menu-button {
     display: block;
   }
-  .profile {
+  .burger-menu {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+    right: 0;
+    top: -110%;
+  }
+  .burger-menu__profile {
+    display: flex;
+    margin: 0 0 24px 0;
+  }
+  .burger-menu__list li:first-child {
+    display: flex;
+  }
+  .burger-menu.active {
+    top: 80px;
+  }
+  .profile_header {
     display: none;
+  }
+  .profile__avatar {
+    margin: 0 16px 0 0;
   }
   .header {
     padding: 0 18px;
@@ -190,6 +210,7 @@
     line-height: 24px;
   }
   .header {
+    height: 48px;
     padding: 0 18px;
   }
   .header__logo {
@@ -201,5 +222,11 @@
   }
   .header__search-icon, .header__search {
     display: none;
+  }
+  .burger-menu {
+    top: -150%;
+  }
+  .burger-menu.active {
+    top: 48px;
   }
 }
