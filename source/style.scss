@@ -1171,6 +1171,7 @@ main {
    &__textarea-question {
       height: 56px;
       grid-area: input;
+      overflow: hidden;
    }
 }
 

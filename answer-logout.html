@@ -10,6 +10,14 @@
 
 <body>
 	<div class="wrapper">
+
+		<div class="burger-menu">
+			<a href="" class="burger-menu__button p16_24">Войти</a>
+			<ul class="burger-menu__list p16_24">
+				<li><img src="img/menu/all.svg" alt="Все вопросы"><a href="#">Все вопросы</a></li>
+			</ul>
+		</div>
+
 		<header class="header">
 			<div class="header__wrapper">
 				<a href="#"><img class="header__logo" src="img/logo.png" alt=""></a>
@@ -302,22 +310,22 @@
 						<h1>Ваш ответ</h1>
 
 						<form action="">
-							<div class="your-answer box">
-								<div class="your-answer__avatar">
+							<div class="textarea-block box">
+								<div class="textarea-block__avatar">
 								</div>
-								<textarea name="your-answer" placeholder="Ваш ответ"
-									class="your-answer__textarea p16_24"></textarea>
-								<div class="your-answer__attach">
-									<a href="#" class="your-answer__photo p16_24">Фото</a>
-									<a href="#" class="your-answer__video p16_24">Видео</a>
+								<textarea name="textarea-block" placeholder="Ваш ответ"
+									class="textarea-block__textarea p16_24"></textarea>
+								<div class="textarea-block__attach">
+									<a href="#" class="textarea-block__photo p16_24">Фото</a>
+									<a href="#" class="textarea-block__video p16_24">Видео</a>
 								</div>
-								<button class="your-answer__button button16_24" type="submit">Оставить комментарий</button>
-								<div class="your-answer__checkbox">
+								<button class="textarea-block__button button16_24" type="submit">Оставить комментарий</button>
+								<div class="textarea-block__checkbox">
 									<input type="checkbox"><span class="p16_24">Подписаться на
 										новые ответы</span>
 								</div>
-								<div class="your-answer__logout">
-									<div class="your-answer__button-login button16_24">
+								<div class="textarea-block__logout">
+									<div class="textarea-block__button-login button16_24">
 										<span><a href="#">Войдите </a> &nbspчтобы оставить комментарий</span>
 									</div>
 								</div>
@@ -472,6 +480,8 @@
 
 		</footer>
 	</div>
+
+	<script src="js/script.js"></script>
 </body>
 
 </html>

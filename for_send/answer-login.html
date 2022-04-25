@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Вопрос-ответ</title>
+	<!--Заголовок-->
+	<meta http-equiv="Content-type" content="text/html" ;charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="burger-menu">
+			<div class="profile burger-menu__profile">
+				<div class="profile__avatar">
+					<img src="img/avatar/avatar.png" alt="">
+				</div>
+				<div class="profile__text">
+					<p class="profile__name p16_24">Александр Александрович</p>
+					<p class="profile__email small_text14_16">alexanderlongadres@gmail.com</p>
+				</div>
+			</div>
+			<ul class="burger-menu__list p16_24">
+				<li><img src="img/menu/all.svg" alt="Все вопросы"><a href="#">Все вопросы</a></li>
+				<li><img src="img/menu/profile.svg" alt="Профиль"><a href="#">Профиль</a></li>
+				<li><img src="img/menu/questions.svg" alt="Мои вопросы"><a href="#">Мои вопросы</a></li>
+				<li><img src="img/menu/answers.svg" alt="Мои ответы"><a href="#">Мои ответы</a></li>
+				<li><img src="img/menu/bookmark.svg" alt="Избранное"><a href="#">Избранное</a></li>
+				<li><img src="img/menu/exit.svg" alt="Выйти"><a href="#">Выйти</a></li>
+			</ul>
+		</div>
+
+		<header class="header">
+			<div class="header__wrapper">
+				<a href="#"><img class="header__logo" src="img/logo.png" alt=""></a>
+				<a class="header__all-questions" href="#">Все вопросы</a>
+				<form class="header__search-form" action="">
+					<input class="header__search" type="text" placeholder="Поиск">
+					<div class="header__search-icon"></div>
+				</form>
+				<div class="profile profile_header">
+					<div class="profile__text">
+						<p class="profile__name p16_24">Александр Александрович</p>
+						<p class="profile__email small_text14_16">alexanderlongadres@gmail.com</p>
+					</div>
+					<div class="profile__avatar">
+						<img src="img/avatar/avatar.png" alt="">
+					</div>
+					<div class="profile__arrow"></div>
+				</div>
+				<div class="header__search-button"></div>
+				<div class="burger__menu-button">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="columns">
+				<aside class="columns__left columns__left_answer">
+					<div></div>
+				</aside>
+
+				<div class="main-column">
+
+					<section class="question-alone">
+						<div class=" question box">
+							<div class="question__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="question__avatar">
+								<img src="img/avatar/avatar1.png" height="100%" alt="">
+							</div>
+
+							<p class="question__name">
+								<span class="p16_24">Александр Александрович</span>
+								<span class="question__point p16_24"></span>
+								<span class="question__time p16_24">5 минут назад</span>
+							</p>
+
+							<div class="question__text-box">
+								<h3 class="question__title">Как использовать список цветов, чтобы цвета менялись при каждой
+									интерации цикла? Почему возникает ошибка SQLSTATE[HY000] [1698] Access denied for user
+									'root'@'localhost'</h3>
+								<div class="question__images">
+									<img src="img/answer/image.png" alt="">
+									<img src="img/answer/image.png" alt="">
+									<img src="img/answer/image.png" alt="">
+								</div>
+								<div class="question__info question__info_answer">
+									<a href="#" class="question__answer-button button16_24 check">2 ответа</a>
+									<div class="question__labels">
+										<div>
+											<img src="img/main/view.svg" alt="">
+											<span class="question__view p16_24">1139</span>
+										</div>
+										<div class="question__bookmark">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="answer-title">
+						<h1>Лучшие ответы</h1>
+						<div class="answer box box_green">
+							<div class="answer__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="answer__avatar no-avatar no-avatar_orange">
+								<span>C</span>
+								<img src="" height="100%" alt="">
+							</div>
+
+							<p class="answer__name">
+								<span class="p16_24">Сергей Петров</span>
+								<span class="answer__point p16_24"></span>
+								<span class="answer__time p16_24">25 минут назад</span>
+								<span class="answer__right button16_24">Правильный ответ</span>
+							</p>
+
+							<div class="answer__text-box">
+								<h3 class="answer__title">Ох и беды с этими разенами... Нажми Win R, напиши msconfig и в
+									Загрузка → Дополнительные параметры отключи ненужные ядра.</h3>
+
+								<div class="answer__info">
+									<a href="#" class="answer__button p16_24">Нравится 5</a>
+								</div>
+							</div>
+						</div>
+						<div class="answer box box_green">
+							<div class="answer__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="answer__avatar">
+								<span>C</span>
+								<img src="img/avatar/avatar2.png" height="100%" alt="">
+							</div>
+
+							<p class="answer__name">
+								<span class="answer__user-name p16_24">Андрей Костромскович</span>
+								<span class="answer__point p16_24"></span>
+								<span class="answer__time p16_24">2 часа назад</span>
+								<span class="answer__right button16_24">Правильный ответ</span>
+							</p>
+
+							<div class="answer__text-box">
+								<h3 class="answer__title">Консервировать печеные яблоки лучше с косточками целиком или
+									кусочками?</h3>
+
+								<div class="answer__info">
+									<a href="#" class="answer__button p16_24 like">Нравится 3</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="answer-title">
+						<h1>Все ответы</h1>
+						<div class="answer box">
+							<div class="answer__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="answer__avatar no-avatar no-avatar_pink">
+								<span>A</span>
+								<img src="" height="100%" alt="">
+							</div>
+
+							<p class="answer__name">
+								<span class="p16_24">Александр Александрович</span>
+								<span class="answer__point p16_24"></span>
+								<span class="answer__time p16_24">5 минут назад</span>
+								<span class="answer__right button16_24 answer__right_off">Правильный ответ</span>
+							</p>
+
+							<div class="answer__text-box">
+								<h3 class="answer__title">Посмотрела этот фильм после того, как прочитала подробную рецензию.
+									Автора фамилию не помню, только то, что этот мужчина - и очевидец событий, и сам
+									гроссмейстер. Поэтому ряд моментов в картине мне был уже как бы...</h3>
+								<div class="answer__info">
+									<a href="#" class="answer__button p16_24">Нравится 2</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="answer box">
+							<div class="answer__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="answer__avatar">
+								<span>A</span>
+								<img src="img/avatar/avatar4.png" height="100%" alt="">
+							</div>
+
+							<p class="answer__name">
+								<span class="p16_24">Андрей Петров</span>
+								<span class="answer__point p16_24"></span>
+								<span class="answer__time p16_24">1 час назад</span>
+								<span class="answer__right button16_24 answer__right_off">Правильный ответ</span>
+							</p>
+
+							<div class="answer__text-box">
+								<h3 class="answer__title">"Найти эту информацию, яндекс выдаёт просто частоту всего процессора."
+									так там частота отдельного ядра и частота всего процессора одинаковая.</h3>
+								<div class="answer__images">
+									<img src="img/answer/image.png" alt="">
+									<img src="img/answer/image.png" alt="">
+									<img src="img/answer/image.png" alt="">
+								</div>
+								<div class="answer__info">
+									<a href="#" class="answer__button p16_24">Нравится 0</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="answer box box_green">
+							<div class="answer__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="answer__avatar no-avatar no-avatar_orange">
+								<span>C</span>
+								<img src="" height="100%" alt="">
+							</div>
+
+							<p class="answer__name">
+								<span class="p16_24">Сергей Петров</span>
+								<span class="answer__point p16_24"></span>
+								<span class="answer__time p16_24">25 минут назад</span>
+								<span class="answer__right button16_24">Правильный ответ</span>
+							</p>
+
+							<div class="answer__text-box">
+								<h3 class="answer__title">Ох и беды с этими разенами... Нажми Win R, напиши msconfig и в
+									Загрузка → Дополнительные параметры отключи ненужные ядра.</h3>
+								<div class="answer__info">
+									<a href="#" class="answer__button p16_24">Нравится 5</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="answer box">
+							<div class="answer__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="answer__avatar">
+								<span>A</span>
+								<img src="img/avatar/avatar1.png" height="100%" alt="">
+							</div>
+
+							<p class="answer__name">
+								<span class="p16_24">Александр Александрович</span>
+								<span class="answer__point p16_24"></span>
+								<span class="answer__time p16_24">5 минут назад</span>
+								<span class="answer__right button16_24 answer__right_off">Правильный ответ</span>
+							</p>
+
+							<div class="answer__text-box">
+								<h3 class="answer__title">Посмотрела этот фильм после того, как прочитала подробную рецензию.
+									Автора фамилию не помню, только то, что этот мужчина - и очевидец событий, и сам
+									гроссмейстер.</h3>
+								<div class="answer__info">
+									<a href="#" class="answer__button p16_24">Нравится 2</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="answer box box_green">
+							<div class="answer__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="answer__avatar">
+								<span>C</span>
+								<img src="img/avatar/avatar2.png" height="100%" alt="">
+							</div>
+
+							<p class="answer__name">
+								<span class="p16_24">Андрей Костромскович</span>
+								<span class="answer__point p16_24"></span>
+								<span class="answer__time p16_24">2 часа назад</span>
+								<span class="answer__right button16_24">Правильный ответ</span>
+							</p>
+
+							<div class="answer__text-box">
+								<h3 class="answer__title">Консервировать печеные яблоки лучше с косточками целиком или
+									кусочками?</h3>
+								<div class="answer__info">
+									<a href="#" class="answer__button p16_24 like">Нравится 3</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="answer-title">
+						<h1>Ваш ответ</h1>
+						<form action="">
+							<div class="textarea-block box">
+								<div class="textarea-block__avatar">
+									<img src="img/avatar/avatar1.png" height="100%" alt="">
+								</div>
+								<textarea name="textarea-block" placeholder="Ваш ответ"
+									class="textarea-block__textarea p16_24"></textarea>
+								<div class="textarea-block__attach">
+									<a href="#" class="textarea-block__photo p16_24">Фото</a>
+									<a href="#" class="textarea-block__video p16_24">Видео</a>
+								</div>
+								<button class="textarea-block__button button16_24" type="submit">Оставить комментарий</button>
+								<div class="textarea-block__checkbox">
+									<input type="checkbox"><span class="p16_24">Подписаться на
+										новые ответы</span>
+								</div>
+							</div>
+
+						</form>
+					</section>
+					<section class="answer-title">
+						<h1>Похожие вопросы</h1>
+						<div class=" question box">
+							<div class="question__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="question__avatar">
+								<img src="img/avatar/avatar1.png" height="100%" alt="">
+							</div>
+
+							<p class="question__name">
+								<span class="p16_24">Александр Александрович</span>
+								<span class="question__point p16_24"></span>
+								<span class="question__time p16_24">5 минут назад</span>
+							</p>
+
+							<div class="question__text-box">
+								<h3 class="question__title">Читала про японца, которые выжил и при Хиросиме и при Нагасаки, и
+									дожил до 93-х лет, а как же радиация?</h3>
+								<div class="question__info">
+									<a href="#" class="question__answer-button button16_24 check">2 ответа</a>
+									<div class="question__labels">
+										<div>
+											<img src="img/main/view.svg" alt="">
+											<span class="question__view p16_24">1139</span>
+										</div>
+										<div class="question__bookmark">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class=" question box">
+							<div class="question__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="question__avatar no-avatar no-avatar_orange">
+								<span>C</span>
+								<img src="" height="100%" alt="">
+							</div>
+
+							<p class="question__name">
+								<span class="p16_24">Сергей Петров</span>
+								<span class="question__point p16_24"></span>
+								<span class="question__time p16_24">25 минут назад</span>
+							</p>
+
+							<div class="question__text-box">
+								<h3 class="question__title">Как использовать список цветов, чтобы цвета менялись при каждой
+									интерации цикла?</h3>
+								<div class="question__info">
+									<a href="#" class="question__answer-button button16_24">0 ответов</a>
+									<div class="question__labels">
+										<div>
+											<img src="img/main/view.svg" alt="">
+											<span class="question__view p16_24">1139</span>
+										</div>
+										<div class="question__bookmark">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class=" question box">
+							<div class="question__menu">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							<div class="question__avatar">
+								<img src="img/avatar/avatar2.png" height="100%" alt="">
+							</div>
+							<p class="question__name">
+								<span class="p16_24">Андрей Васильев</span>
+								<span class="question__point p16_24"></span>
+								<span class="question__time p16_24">2 часа назад</span>
+							</p>
+
+							<div class="question__text-box">
+								<h3 class="question__title">Консервировать печеные яблоки лучше с косточками целиком или
+									кусочками?</h3>
+								<div class="question__info">
+									<a href="#" class="question__answer-button button16_24 no-check">2 ответа</a>
+									<div class="question__labels">
+										<div>
+											<img src="img/main/view.svg" alt="">
+											<span class="question__view p16_24">1139</span>
+										</div>
+										<div class="question__bookmark">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="ask-block">
+						<div class="ask box box_blue">
+							<h3 class="ask__text">Не нашли что искали?</h3>
+							<a href="" class="ask__button button16_24">Задайте свой вопрос</a>
+						</div>
+					</section>
+
+				</div>
+				<aside class="columns__right columns__right_answer">
+					<div></div>
+				</aside>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__left"></div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+				<p class="footer__politics">
+					<a href="#">Политика конфиденциальности</a>
+					<a href="#">Пользовательское соглашение</a>
+				</p>
+				<div class="footer__social">
+					<div class="footer__social-block">
+						<a href="#"><img src="img/footer/fb.png" alt=""></a>
+						<a href="#"><img src="img/footer/tw.png" alt=""></a>
+						<a href="#"><img src="img/footer/inst.png" alt=""></a>
+						<a href="#"><img src="img/footer/vk.png" alt=""></a>
+						<a href="#"><img src="img/footer/ok.png" alt=""></a>
+					</div>
+				</div>
+				<p class="footer__copy">©копирайт 2022</p>
+			</div>
+			<div class="footer__right"></div>
+		</footer>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+@media (max-width: 1000px) {
+  .header {
+    padding: 0 5.67%;
+  }
+  .burger-menu {
+    right: 2.5%;
+  }
+  .columns__right {
+    display: none;
+  }
+  .footer__right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger__menu-button {
+    display: block;
+  }
+  .burger-menu {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+    right: 0;
+    top: -110%;
+  }
+  .burger-menu__profile {
+    display: flex;
+    margin: 0 0 24px 0;
+  }
+  .burger-menu__list li:first-child {
+    display: flex;
+  }
+  .burger-menu.active {
+    top: 80px;
+  }
+  .profile_header {
+    display: none;
+  }
+  .profile__avatar {
+    margin: 0 16px 0 0;
+  }
+  .header {
+    padding: 0 18px;
+  }
+  .header__all-questions {
+    display: none;
+  }
+  .header__logo {
+    width: 103px;
+    height: 39px;
+  }
+  .header__button-login {
+    display: none;
+  }
+  .columns__left {
+    display: none;
+  }
+  .title {
+    margin: 80px 0 40px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title__ask-button {
+    width: 100%;
+  }
+  .question {
+    padding: 24px;
+  }
+  .question__avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .answer {
+    padding: 24px;
+  }
+  .footer__left {
+    display: none;
+  }
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo politics " "social copy";
+  }
+  .footer__logo img {
+    width: 104px;
+    height: 40px;
+  }
+  .footer__politics {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__politics a:last-child {
+    margin: 8px 0 0 0;
+  }
+  .footer__copy {
+    justify-self: start;
+  }
+  .textarea-block {
+    padding: 16px 8px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "textarea " "attach " "checkbox" "button ";
+  }
+  .textarea-block__avatar {
+    display: none;
+  }
+  .textarea-block__input {
+    height: 80px;
+  }
+  .textarea-block__textarea {
+    height: 240px;
+  }
+  .textarea-block__checkbox {
+    margin: 0;
+  }
+  .textarea-block__button {
+    width: 100%;
+  }
+  .registration {
+    margin: 0;
+    padding: 80px 16px 40px;
+    width: 100%;
+    display: grid;
+    column-gap: 24px;
+    row-gap: 40px;
+    grid-template-areas: "title title" "name email" "pass repeat-pass" "info info";
+  }
+  .registration__name {
+    margin: 0;
+  }
+  .registration__email {
+    margin: 0;
+  }
+  .registration__pass {
+    margin: 0;
+  }
+  .registration__repeat-pass {
+    margin: 0;
+  }
+  .registration__info {
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .registration__info button {
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .input-form {
+    width: 100%;
+  }
+  .enter {
+    width: 100%;
+    margin: 0;
+    padding: 80px 16px 40px;
+  }
+  .enter__inputs {
+    display: flex;
+    justify-content: stretch;
+    column-gap: 24px;
+    margin: 40px 0 0 0;
+  }
+  .enter__inputs div {
+    margin: 0;
+  }
+  .enter__email {
+    flex: 0 0 48%;
+  }
+  .enter__pass {
+    flex: 0 0 48%;
+  }
+  .enter button {
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
+  .recover {
+    width: 100%;
+    margin: 0;
+    padding: 80px 16px 40px;
+  }
+  .recover__text {
+    margin: 8px 0 0 0;
+  }
+  .recover__email {
+    margin: 40px 0 0 0;
+    max-width: 400px;
+  }
+  .recover button {
+    width: 100%;
+  }
+  .new-question {
+    grid-template-columns: 1fr;
+    grid-template-areas: "input" "textarea" "attach" "button";
+  }
+  .new-question__title {
+    margin: 80px 0 16px 0;
+  }
+  .new-question__textarea-question {
+    height: 80px;
+  }
+  .question__rights {
+    margin: 0 0 80px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .question {
+    padding: 16px;
+    grid-template-columns: 55px auto;
+    grid-template-areas: "avatar name" "text text";
+    align-items: flex-start;
+  }
+  .question__point {
+    display: none;
+  }
+  .question__avatar {
+    justify-self: start;
+  }
+  .question__name {
+    margin: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .question__time {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .question__images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .question__images img {
+    margin: 16px 0 0 0;
+    max-width: 100%;
+  }
+  .question__menu {
+    display: none;
+  }
+  .footer__container {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    grid-template-areas: "logo" "social" "politics" "copy";
+  }
+  .answer {
+    padding: 16px;
+    grid-template-columns: 55px auto;
+    grid-template-areas: "avatar name" "text text";
+    align-items: flex-start;
+  }
+  .answer__point {
+    display: none;
+  }
+  .answer__avatar {
+    justify-self: start;
+  }
+  .answer__images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .answer__images img {
+    margin: 16px 0 0 0;
+    max-width: 100%;
+  }
+  .answer__name {
+    display: grid;
+    grid-template-areas: "right" "user-name" "time";
+  }
+  .answer__menu {
+    display: none;
+  }
+  .answer__right {
+    margin: 0 0 0 26px;
+  }
+  .ask-block {
+    margin: 80px 0 80px 0;
+  }
+  .ask {
+    flex-direction: column;
+  }
+  .ask__button {
+    width: 100%;
+    margin: 24px 0 0 0;
+  }
+  .registration {
+    display: block;
+  }
+  .registration__name {
+    margin: 40px 0 0 0;
+  }
+  .registration__email {
+    margin: 16px 0 0 0;
+  }
+  .registration__pass {
+    margin: 40px 0 0 0;
+  }
+  .registration__repeat-pass {
+    margin: 16px 0 0 0;
+  }
+  .registration__info {
+    margin: 40px 0 0 0;
+  }
+  .enter__inputs {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+    justify-content: stretch;
+    column-gap: 24px;
+    margin: 40px 0 0 0;
+  }
+  .enter__inputs div {
+    margin: 0;
+  }
+  .recover {
+    padding: 40px 16px;
+  }
+  .recover__text {
+    margin: 24px 0 0 0;
+  }
+  .recover__email {
+    margin: 16px 0 0 0;
+    max-width: none;
+    width: 100%;
+  }
+  .recover button {
+    margin: 24px 0 0 0;
+    width: 100%;
+  }
+  .new-question {
+    margin: 24px 0 0 0;
+  }
+  .new-question__title {
+    margin: 40px 0 16px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  h3 {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .header {
+    height: 48px;
+    padding: 0 18px;
+  }
+  .header__logo {
+    width: 77px;
+    height: 29px;
+  }
+  .header__search-button {
+    display: block;
+  }
+  .header__search-icon, .header__search {
+    display: none;
+  }
+  .burger-menu {
+    top: -150%;
+  }
+  .burger-menu.active {
+    top: 48px;
+  }
+}

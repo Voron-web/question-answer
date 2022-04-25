@@ -1294,6 +1294,7 @@ main {
 .new-question__textarea-question {
   height: 56px;
   grid-area: input;
+  overflow: hidden;
 }
 
 .question__rights {
