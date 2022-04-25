@@ -2,6 +2,9 @@
   .header {
     padding: 0 5.67%;
   }
+  .burger-menu {
+    right: 2.5%;
+  }
   .columns__right {
     display: none;
   }
@@ -11,7 +14,7 @@
 }
 
 @media (max-width: 768px) {
-  .burger__menu {
+  .burger__menu-button {
     display: block;
   }
   .profile {
