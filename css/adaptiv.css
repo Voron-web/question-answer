@@ -144,6 +144,30 @@
   .input-form {
     width: 100%;
   }
+  .enter {
+    width: 100%;
+    margin: 0;
+    padding: 80px 16px 40px;
+  }
+  .enter__inputs {
+    display: flex;
+    justify-content: stretch;
+    column-gap: 24px;
+    margin: 40px 0 0 0;
+  }
+  .enter__inputs div {
+    margin: 0;
+  }
+  .enter__email {
+    flex: 0 0 48%;
+  }
+  .enter__pass {
+    flex: 0 0 48%;
+  }
+  .enter button {
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
 }
 
 @media (max-width: 425px) {
@@ -241,6 +265,17 @@
   }
   .registration__info {
     margin: 40px 0 0 0;
+  }
+  .enter__inputs {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+    justify-content: stretch;
+    column-gap: 24px;
+    margin: 40px 0 0 0;
+  }
+  .enter__inputs div {
+    margin: 0;
   }
 }
 

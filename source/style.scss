@@ -1044,7 +1044,7 @@ main {
    }
 }
 .registration {
-   margin: 0 auto;
+   margin: 0 0 0 27%;
    width: 400px;
    padding: 129px 0;
 
@@ -1098,6 +1098,47 @@ main {
       }
    }
 }
+
+.enter {
+   margin: 0 0 0 27%;
+   width: 400px;
+   padding: 129px 0;
+   &__title {
+      & a {
+         color: #7749f8;
+      }
+   }
+
+   &__email {
+      position: relative;
+      margin: 40px 0 0 0;
+   }
+
+   &__pass {
+      margin: 16px 0 0 0;
+   }
+   &__forget {
+      display: flex;
+      justify-content: end;
+      margin: 8px 0 0 0;
+      color: #808080;
+   }
+
+   & button {
+      // flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 8px 0 0 0;
+      padding: 12px 57.5px;
+      background-color: #7749f8;
+      border-radius: 6px;
+      color: #fff;
+   }
+   &__inputs {
+   }
+}
+
 /////////////////////////////////////////////////////////////
 
 @import "adaptiv.scss";
