@@ -214,6 +214,18 @@ main {
          transform: rotate(45deg);
       }
    }
+   &__button-login {
+      width: 93px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #7749f8;
+      border-radius: 8px;
+      & a {
+         color: #000;
+      }
+   }
 }
 
 .profile {
