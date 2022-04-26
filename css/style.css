@@ -572,7 +572,8 @@ main {
 .question {
   position: relative;
   display: grid;
-  justify-content: start;
+  justify-content: flex-start;
+  grid-template-columns: 56px 1fr;
   grid-template-areas: "avatar name" "avatar text";
   padding: 32px;
 }
