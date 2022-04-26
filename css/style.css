@@ -140,6 +140,11 @@ h3 {
   line-height: 24px;
 }
 
+.button16_24:hover {
+  filter: brightness(0.9);
+  box-shadow: 0px 0px 5px 1px #dbdbdb;
+}
+
 .small_text14_16 {
   font-family: "Circe";
   font-style: normal;
@@ -301,6 +306,11 @@ main {
 
 .header__button-login a {
   color: #000;
+}
+
+.header__button-login:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px 0.5px #7749f8;
 }
 
 .profile {
@@ -887,6 +897,10 @@ main {
   background: url("../img/answer/like.svg") -4px 0 no-repeat;
 }
 
+.answer__button:hover {
+  box-shadow: 0px 0px 5px 1px #dbdbdb;
+}
+
 .answer__right {
   grid-area: right;
   color: #69cb39;
@@ -1088,6 +1102,11 @@ main {
 }
 
 .textarea-block__button-login {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
   width: 100%;
   height: 72px;
   padding: 24px 32px;
