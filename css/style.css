@@ -552,7 +552,7 @@ main {
 
 .questions-list {
   display: block;
-  margin: 0 0 120px 0;
+  margin: 0;
 }
 
 .no-avatar {
@@ -1353,6 +1353,73 @@ main {
 .question__rights a {
   color: #808080;
   text-decoration: underline;
+}
+
+.pagination {
+  margin: 40px 0 80px 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.pagination__button-left {
+  position: relative;
+}
+
+.pagination__button-left::before {
+  content: "";
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform-origin: 50% 50%;
+  transform: rotate(-45deg);
+}
+
+.pagination__button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination__pages {
+  display: flex;
+  column-gap: 1px;
+}
+
+.pagination__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__page.active {
+  background: #69cb39;
+  color: #fff;
+}
+
+.pagination__button-right {
+  position: relative;
+}
+
+.pagination__button-right::before {
+  content: "";
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform-origin: 50% 50%;
+  transform: rotate(135deg);
+  transition: 0.5s;
 }
 
 @media (max-width: 1000px) {

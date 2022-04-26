@@ -460,7 +460,7 @@ main {
 /////////////////////////////////////////////////////////////
 .questions-list {
    display: block;
-   margin: 0 0 120px 0;
+   margin: 0;
 }
 .no-avatar {
    font-family: "Inter";
@@ -1227,4 +1227,81 @@ main {
 }
 /////////////////////////////////////////////////////////////
 
+.pagination {
+   margin: 40px 0 80px 0;
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   column-gap: 15px;
+
+   &__button-left {
+      position: relative;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 33%;
+         left: 40%;
+         // transform: translate(-40%, -40%);
+         width: 15px;
+         height: 15px;
+         // border-top: 2px solid #7749f8;
+         // border-left: 2px solid #7749f8;
+         border-top: 2px solid #000;
+         border-left: 2px solid #000;
+         transform-origin: 50% 50%;
+         transform: rotate(-45deg);
+         // transition: 0.5s;
+      }
+   }
+
+   &__button {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      cursor: pointer;
+      // margin: 0 1px;
+   }
+
+   &__pages {
+      display: flex;
+      column-gap: 1px;
+   }
+   &__page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.active {
+         background: #69cb39;
+         // border-radius: 6px;
+         color: #fff;
+      }
+   }
+
+   &__button-right {
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 33%;
+         left: 20%;
+         // transform: translate(-40%, -40%);
+         width: 15px;
+         height: 15px;
+         border-top: 2px solid #000;
+         border-left: 2px solid #000;
+         transform-origin: 50% 50%;
+         transform: rotate(135deg);
+         transition: 0.5s;
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////////
+
 @import "adaptiv.scss";
+
+// * {
+//    border: 1px solid red;
+// }
