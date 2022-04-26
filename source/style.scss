@@ -499,6 +499,11 @@ main {
          left: 50%;
          transform: translate(-50%, -50%);
       }
+      &:hover {
+         transition: 0.5s;
+         transform: scale(0.93);
+         box-shadow: 0px 0px 5px 2px #ddd;
+      }
    }
 
    &__text-box {
@@ -521,6 +526,12 @@ main {
       margin: 0 0 12px 0;
       grid-area: name;
       color: #808080;
+      & a {
+         color: #808080;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
    }
    &__point {
       width: 3px;
@@ -643,6 +654,11 @@ main {
          left: 50%;
          transform: translate(-50%, -50%);
       }
+      &:hover {
+         transition: 0.5s;
+         transform: scale(0.93);
+         box-shadow: 0px 0px 5px 2px #ddd;
+      }
    }
 
    &__text-box {
@@ -665,6 +681,12 @@ main {
       margin: 0 0 12px 0;
       grid-area: name;
       color: #808080;
+      & > a {
+         color: #808080;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
    }
    &__user-name {
       grid-area: user-name;

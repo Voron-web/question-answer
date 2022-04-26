@@ -597,6 +597,12 @@ main {
   transform: translate(-50%, -50%);
 }
 
+.question__avatar:hover {
+  transition: 0.5s;
+  transform: scale(0.93);
+  box-shadow: 0px 0px 5px 2px #ddd;
+}
+
 .question__text-box {
   grid-area: text;
   width: 100%;
@@ -620,6 +626,14 @@ main {
   margin: 0 0 12px 0;
   grid-area: name;
   color: #808080;
+}
+
+.question__name a {
+  color: #808080;
+}
+
+.question__name a:hover {
+  text-decoration: underline;
 }
 
 .question__point {
@@ -752,6 +766,12 @@ main {
   transform: translate(-50%, -50%);
 }
 
+.answer__avatar:hover {
+  transition: 0.5s;
+  transform: scale(0.93);
+  box-shadow: 0px 0px 5px 2px #ddd;
+}
+
 .answer__text-box {
   grid-area: text;
   width: 100%;
@@ -775,6 +795,14 @@ main {
   margin: 0 0 12px 0;
   grid-area: name;
   color: #808080;
+}
+
+.answer__name > a {
+  color: #808080;
+}
+
+.answer__name > a:hover {
+  text-decoration: underline;
 }
 
 .answer__user-name {
